@@ -1,0 +1,111 @@
+/* Background color for the entire page */
+body {
+    background-color: aliceblue; /* AliceBlue background */
+  }
+  
+  /* Background color for the navbar */
+  nav {
+    background-color:skyblue; /* SkyBlue background */
+  }
+  
+  /* Change background for nav-items on hover */
+  .nav-item:hover {
+    background-color: #add8e6; /* LightBlue background on hover */
+  }
+  
+  /* Form search bar background */
+  form {
+    background-color: #e0ffff; /* LightCyan background */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Background for search input field */
+  .form-control {
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Background color for search button */
+  .btn-outline-success {
+    background-color: #32CD32; /* LimeGreen background */
+    color: white;
+    border: none;
+  }
+  
+  /* Hover effect on the search button */
+  .btn-outline-success:hover {
+    background-color: #228B22; /* ForestGreen background */
+  }
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:chartreuse;
+    padding: 2px 0px;
+}
+#shop_by_category{
+    background-color:lightcoral;
+    padding: 2px 2px;
+}
+#products{
+    background-color:lightseagreen;
+}
+/* Styles for the Our Features section */
+.feature {
+    background-color: #343a40; /* Dark background for the feature section */
+    padding: 50px 0; /* Padding for top and bottom */
+}
+
+.feature h3 {
+    color: #ffdd57; /* Heading color */
+}
+
+.feature p {
+    color: #fff; /* Text color for descriptions */
+}
+
+.shadow {
+    border-radius: 8px; /* Rounded corners for shadow boxes */
+    background-color: #495057; /* Light background for boxes */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.shadow:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+/* Styles for the Products section */
+.products {
+    background-color: #f8f9fa; /* Light background for the products section */
+}
+
+.section_title h1 {
+    color: #343a40; /* Title color */
+}
+
+.list-group-item {
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.single_product {
+    border-radius: 8px; /* Rounded corners for product boxes */
+    background-color: #fff; /* White background for product boxes */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.single_product:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.product-caption h5 a {
+    color: #343a40; /* Color of product title */
+    text-decoration: none; /* Remove underline */
+}
+
+.product-caption h5 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.new_product .badge {
+    position: absolute; /* Position badge */
+    top
+}

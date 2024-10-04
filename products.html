@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure to create this CSS file -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .products {
+            padding: 50px 0;
+        }
+        
+        .single_product {
+            margin-bottom: 30px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            position: relative; /* Make position relative for the new badge */
+            transition: transform 0.3s;
+        }
+        
+        .single_product:hover {
+            transform: scale(1.05);
+        }
+        
+        .product_img img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .price {
+            font-size: 1.25rem;
+            color: #28a745;
+        }
+        
+        .new_product {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .section_title h1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Products</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 border-right mb-small-5">
+                    <h4 class="mb-5 border-bottom">Filters</h4>
+                    <div class="mb-5">
+                        <label><b>Category</b></label>
+                        <ul class="list-group">
+                            <li class="list-group-item">Category 1</li>
+                            <li class="list-group-item">Category 2</li>
+                            <li class="list-group-item">Cricket</li>
+                            <li class="list-group-item">Category 4</li>
+                            <li class="list-group-item">Category 5</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label><b>Price</b></label>
+                                <input type="range" min="100" max="1000" step="100" class="form-control-range">
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-between">
+                            <label>₹100</label>
+                            <label>₹1000</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row mb-5">
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="product_detail.html"><img src="https://m.media-amazon.com/images/I/317VTY6RngL._AC_UF894,1000_QL80_.jpg" alt="Cricket Bat"></a>
+                                    <div class="new_product">New</div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="product_detail.html">SS Cricket Bat</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>3000</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                                <div class="product_img">
+                                    <a href="product_detail.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAipKl6eDzYMbrKI2wqdMqrhr2GWPmkln6Hg&s" alt="Cricket Ball"></a>
+                                    <div class="new_product">New</div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="product_detail.html">SG Cricket Ball</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>600</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="product_detail.html"><img src="https://5.imimg.com/data5/SELLER/Default/2023/6/316218810/YJ/PV/RN/144689860/sg-cricket-gloves.jpg" alt="Cricket Gloves"></a>
+                                    <div class="new_product">New</div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="product_detail.html">SS Cricket Gloves</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>1200</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1">
+                                <div class="product_img">
+                                    <a href="product_detail.html"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/guard/m/o/z/right-left-batting-cricket-pads-for-boy-s-boys-7-12-year-batting-original-imagnx79ny8n6vmn.jpeg?q=20&crop=false" alt="Cricket Pads"></a>
+                                    <div class="new_product">New</div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="product_detail.html">SG Cricket Pads</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>1500</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                                <div class="product_img">
+                                    <a href="product_detail.html"><img src="https://t4.ftcdn.net/jpg/00/82/41/93/360_F_82419373_z3M7yst25kUNlQerIwRadJPTnpuKRYbH.jpg" alt="Cricket Helmet"></a>
+                                    <div class="new_product">New</div>
+                                </div>
+                                <div class="product-caption my-3">
+                                    <div class="product-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h5><a href="product_detail.html">SG Cricket Helmet</a></h5>
+                                    <div class="price">
+                                        <b><span class="mr-1">₹</span><span>2500</span></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
